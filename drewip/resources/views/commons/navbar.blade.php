@@ -26,9 +26,9 @@
                     </li>
     </nav>    
             <nav class="navbar navbar-expand navbar-dark bg-secondary justify-content-around">
-                    <h4><a>{!! link_to_route('topics.index', 'Topics', ['id' => Auth::id()]) !!}</a></h4>
-                    <h4><a>{!! link_to_route('users.show', 'My profile', ['id' => Auth::id()]) !!}</a></h4>
-                    <h4><a>{!! link_to_route('users.show', 'My profile', ['id' => Auth::id()]) !!}</a></h4>
+                    <h4>{!! link_to_route('topics.index', 'Topics', ['id' => Auth::id()], ['class' => 'text-white']) !!}</h4>
+                    <h4>{!! link_to_route('users.show', 'My profile', ['id' => Auth::id()],['class' => 'text-white']) !!}</h4>
+                    <h4>{!! link_to_route('users.show', 'My profile', ['id' => Auth::id()], ['class' => 'text-white']) !!}</h4>
             </nav> 
                 @else
                     <li class="nav-item">{!! link_to_route('signup.get', 'Signup', [], ['class' => 'nav-link']) !!}</li>
